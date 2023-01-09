@@ -1,0 +1,210 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-03-10 00:26+0100\n"
+"PO-Revision-Date: 2022-03-10 00:26+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-KeywordsList: GetString\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: MobileAppForms/Ux/Controls/MaterialEntry.xaml.cs:457
+msgid "Dimenticata?"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/Overlays/SearchByRefPanelOverlayPresenter.xaml.cs:131
+msgid "Cerca per riferimento immobile:"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/Overlays/SearchByRefPanelOverlayPresenter.xaml.cs:132
+msgid "Cerca"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/Overlays/SortPanelOverlayPresenter.xaml.cs:133
+msgid "Ordina per:"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/Panels/FilterPanel.xaml.cs:212
+msgid "Dove?"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/Panels/FilterPanel.xaml.cs:213
+msgid "Seleziona aree ricerca"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/Panels/FilterPanel.xaml.cs:214
+msgid "Tipo contratto"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/Panels/FilterPanel.xaml.cs:215
+#: MobileAppForms/Ux/Presenter/Phone/RealEstatePropertyDetailPage.xaml.cs:264
+#: MobileAppForms/ViewModel/DisplayRealEstateProperty.cs:74
+msgid "Locali"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/Panels/FilterPanel.xaml.cs:216
+msgid "Prezzo (da - a)"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/Panels/FilterPanel.xaml.cs:217
+#, csharp-format
+msgid "Superficie ({0})"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/Panels/FilterPanel.xaml.cs:219
+msgid "Apri ricerca avanzata"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/Panels/FilterPanel.xaml.cs:221
+msgid "Vendita"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/Panels/FilterPanel.xaml.cs:222
+msgid "Affitto"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/Panels/FilterPanel.xaml.cs:224
+#, csharp-format
+msgid "min. {0}"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/Panels/FilterPanel.xaml.cs:225
+#, csharp-format
+msgid "max. {0}"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/Panels/FilterPanel.xaml.cs:226
+#, csharp-format
+msgid "min. {0} m²"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/Panels/FilterPanel.xaml.cs:227
+#, csharp-format
+msgid "max. {0} m²"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/RealEstatePropertyDetailPage.xaml.cs:257
+msgid "Dettaglio locale"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/RealEstatePropertyDetailPage.xaml.cs:259
+msgid "Descrizione"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/RealEstatePropertyDetailPage.xaml.cs:260
+msgid "Altre info immobile"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/RealEstatePropertyDetailPage.xaml.cs:262
+msgid "ID immobile"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/RealEstatePropertyDetailPage.xaml.cs:263
+#: MobileAppForms/ViewModel/DisplayRealEstateProperty.cs:73
+msgid "Superficie (m²)"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/RealEstatePropertyDetailPage.xaml.cs:265
+#: MobileAppForms/ViewModel/DisplayRealEstateProperty.cs:75
+msgid "Camere da letto"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/RealEstatePropertyDetailPage.xaml.cs:266
+#: MobileAppForms/ViewModel/DisplayRealEstateProperty.cs:76
+msgid "Bagni"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/RealEstatePropertyDetailPage.xaml.cs:267
+msgid "Stato immobile"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/RealEstatePropertyDetailPage.xaml.cs:268
+msgid "Cucina"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/RealEstatePropertyDetailPage.xaml.cs:269
+msgid "Piano"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/RealEstatePropertyDetailPage.xaml.cs:270
+msgid "Classe energetica"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/RealEstatePropertyDetailPage.xaml.cs:271
+msgid "Posto auto"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/RealEstatePropertyDetailPage.xaml.cs:272
+msgid "Riscaldamento"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/RealEstatePropertyDetailPage.xaml.cs:273
+msgid "Giardino"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/RealEstatePropertyDetailPage.xaml.cs:274
+msgid "Balcone"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/RealEstatePropertyDetailPage.xaml.cs:276
+msgid "Chiama ora"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/RealEstatePropertyDetailPage.xaml.cs:277
+msgid "Contattaci"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/SigninPage.xaml.cs:93
+msgid "Accedi per attivare tutte le funzionalità"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/SigninPage.xaml.cs:94
+msgid "Oppure accedi con"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/SigninPage.xaml.cs:95
+msgid "Email"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/SigninPage.xaml.cs:96
+msgid "Password"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/SigninPage.xaml.cs:97
+msgid "Accedi"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/SigninPage.xaml.cs:98
+msgid "Non hai un account?"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/SigninPage.xaml.cs:99
+msgid "Registrati"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/SigninPage.xaml.cs:100
+msgid "Hai dimenticato la password?"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/SigninPage.xaml.cs:101
+msgid "Recuperala"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/SigninPage.xaml.cs:102
+msgid "Oppure"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/SigninPage.xaml.cs:103
+msgid "Prosegui senza accedere"
+msgstr ""
+
+#: MobileAppForms/Ux/Presenter/Phone/Tabs/SearchPageContent.xaml.cs:48
+msgid "Lista locali"
+msgstr ""

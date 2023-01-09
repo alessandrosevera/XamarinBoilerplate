@@ -1,0 +1,146 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2545" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="PropertyChanged.Fody" Version="4.1.0">
+        <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.46" />
+    <PackageReference Include="System.Collections.Immutable" Version="7.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="VuexCross" />
+    <None Remove="Ioc\" />
+    <None Remove="Vue\" />
+    <None Remove="Vue\Component\" />
+    <None Remove="Uxù\" />
+    <None Remove="Ux\Presenter\" />
+    <None Remove="Service.Core\" />
+    <None Remove="Service\" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Vue\Routing\" />
+    <None Remove="Provider\" />
+    <None Remove="Provider\Catalog\" />
+    <None Remove="Provider\Locale\" />
+    <None Remove="Provider.Core\" />
+    <None Remove="Provider\Configuration\" />
+    <None Remove="Provider.Core\Configuration\" />
+    <None Remove="Provider\Configuration\configuration.json" />
+    <None Remove="Model\" />
+    <None Remove="Store\" />
+    <None Remove="Store\Module\" />
+    <None Remove="Store\Module\AppContext\" />
+    <None Remove="Store\Module\AppContext\Action\" />
+    <None Remove="Store\Module\AppContext\Mutation\" />
+    <None Remove="Ux\Presenter\Phone\" />
+    <None Remove="Ux\Presenter\Tablet\" />
+    <None Remove="Ux\Presenter\Universal\" />
+    <None Remove="Ux\Presenter\Universal\Tabs\" />
+    <None Remove="Vue\Component\Tabs\" />
+    <None Remove="Abstraction\" />
+    <None Remove="Abstraction\Component\" />
+    <None Remove="Model\LocalStorage Models\" />
+    <None Remove="Ux\Controls\" />
+    <None Remove="Ux\Controls\Template\" />
+    <None Remove="PropertyChanged.Fody" />
+    <None Remove="Extension\" />
+    <None Remove="Vue.Core\" />
+    <None Remove="Store\Module\Profile\" />
+    <None Remove="Store\Module\Profile\Action\" />
+    <None Remove="Store\Module\Profile\Mutation\" />
+    <None Remove="Model\Customer Models\" />
+    <None Remove="Model.Core\" />
+    <None Remove="Vue\Component\Overlays\" />
+    <None Remove="Ux\Presenter\Phone\Overlays\" />
+    <None Remove="Vue\Component\Snackbars\" />
+    <None Remove="Provider.Core\Local\" />
+    <None Remove="Provider\Local\" />
+    <None Remove="Exceptions\" />
+    <None Remove="Xamarin.FFImageLoading.Forms" />
+    <None Remove="Xamarin.Forms.PancakeView" />
+    <None Remove="HtmlAgilityPack" />
+    <None Remove="System.Collections.Immutable" />
+    <None Remove="Ux\Common\" />
+    <None Remove="Effects\" />
+    <None Remove="Ux\Presenter\Phone\Tabs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Libraries\VuexSharp\VuexSharp\VuexSharp.csproj" />
+    <ProjectReference Include="..\..\..\Libraries\VueSharp\VueSharp\VueSharp.csproj" />
+    <ProjectReference Include="..\..\..\Libraries\SimpleTouchView\SimpleTouchView\SimpleTouchView.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Ioc\" />
+    <Folder Include="Vue\" />
+    <Folder Include="Vue\Component\" />
+    <Folder Include="Ux\" />
+    <Folder Include="Ux\Presenter\" />
+    <Folder Include="Service.Core\" />
+    <Folder Include="Service\" />
+    <Folder Include="Vue\Routing\" />
+    <Folder Include="Provider\" />
+    <Folder Include="Provider\Catalog\" />
+    <Folder Include="Provider\Locale\" />
+    <Folder Include="Provider.Core\" />
+    <Folder Include="Provider\Configuration\" />
+    <Folder Include="Provider.Core\Configuration\" />
+    <Folder Include="Model\" />
+    <Folder Include="Store\" />
+    <Folder Include="Store\Module\" />
+    <Folder Include="Store\Module\AppContext\" />
+    <Folder Include="Store\Module\AppContext\Action\" />
+    <Folder Include="Store\Module\AppContext\Mutation\" />
+    <Folder Include="Ux\Presenter\Phone\" />
+    <Folder Include="Ux\Presenter\Tablet\" />
+    <Folder Include="Ux\Presenter\Universal\" />
+    <Folder Include="Ux\Presenter\Universal\Tabs\" />
+    <Folder Include="Vue\Component\Tabs\" />
+    <Folder Include="Abstraction\" />
+    <Folder Include="Abstraction\Component\" />
+    <Folder Include="Model\LocalStorage Models\" />
+    <Folder Include="Ux\Controls\" />
+    <Folder Include="Ux\Controls\Template\" />
+    <Folder Include="Extension\" />
+    <Folder Include="Vue.Core\" />
+    <Folder Include="Store\Module\Profile\" />
+    <Folder Include="Store\Module\Profile\Action\" />
+    <Folder Include="Store\Module\Profile\Mutation\" />
+    <Folder Include="Model\Customer Models\" />
+    <Folder Include="Model.Core\" />
+    <Folder Include="Vue\Component\Overlays\" />
+    <Folder Include="Ux\Presenter\Phone\Overlays\" />
+    <Folder Include="Vue\Component\Snackbars\" />
+    <Folder Include="Provider.Core\Local\" />
+    <Folder Include="Provider\Local\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Ux\Common\" />
+    <Folder Include="Effects\" />
+    <Folder Include="Ux\Presenter\Phone\Tabs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Provider\Configuration\configuration.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Ux\PreWorkflowPage.xaml.cs">
+      <DependentUpon>PreWorkflowPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

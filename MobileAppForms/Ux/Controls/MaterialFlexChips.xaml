@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<FlexLayout
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:tmpl="clr-namespace:MobileAppForms.Ux.Controls.Template"
+    xmlns:controls="clr-namespace:MobileAppForms.Ux.Controls"
+    x:Class="MobileAppForms.Ux.Controls.MaterialFlexChips"
+    Wrap="Wrap" Direction="Row" AlignContent="Start" AlignItems="Start"
+    HorizontalOptions="FillAndExpand" BindableLayout.ItemsSource="{Binding Items}">
+
+    <!--<BindableLayout.ItemsSource>
+        <x:Array Type="{x:Type x:String}">
+            <x:String>*N/A</x:String>
+            <x:String>1</x:String>
+            <x:String>2</x:String>
+            <x:String>3</x:String>
+            <x:String>4</x:String>
+            <x:String>4+</x:String>
+        </x:Array>
+    </BindableLayout.ItemsSource>-->
+
+    <!--<BindableLayout.ItemsSource>
+        <x:Array Type="{x:Type x:String}">
+            <x:String>Tutte</x:String>
+            <x:String>Bilocale</x:String>
+            <x:String>Trilocale</x:String>
+            <x:String>Villa</x:String>
+            <x:String>Attivo</x:String>
+        </x:Array>
+    </BindableLayout.ItemsSource>-->
+
+    <BindableLayout.ItemTemplate>
+        <DataTemplate>
+            <tmpl:MaterialFlexChipTemplate>
+                <tmpl:MaterialFlexChipTemplate.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="HandleChipTappedInternal" CommandParameter="{Binding .}"></TapGestureRecognizer>
+                </tmpl:MaterialFlexChipTemplate.GestureRecognizers>
+            </tmpl:MaterialFlexChipTemplate>
+        </DataTemplate>
+    </BindableLayout.ItemTemplate>
+
+</FlexLayout>

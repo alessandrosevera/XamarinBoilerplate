@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ux:KeyboardAdaptiveLayout
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:MobileAppForms.Ux.Controls"
+    xmlns:common="clr-namespace:MobileAppForms.Ux.Common"
+    xmlns:ux="clr-namespace:MobileAppForms.Ux"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    x:Class="MobileAppForms.Ux.Phone.AssistanceRequestFormOverlayPresenter">
+
+    <common:OverlayBackdrop x:Name="UiBackdrop" ShownOpacity="0.9"
+                            AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1"></common:OverlayBackdrop>
+
+    <AbsoluteLayout x:Name="Root" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                    Padding="20, 0">
+
+        <yummy:PancakeView x:Name="FormContainer"
+                           BackgroundColor="{StaticResource White}" CornerRadius="8" Padding="15" Opacity="0"
+                           AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional" AbsoluteLayout.LayoutBounds="0.5, 0.5, 1, -1"
+                           CascadeInputTransparent="True">
+
+            <yummy:PancakeView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="HandleInactiveAreaTapped"></TapGestureRecognizer>
+            </yummy:PancakeView.GestureRecognizers>
+
+            <Grid ColumnSpacing="10" RowSpacing="10" HorizontalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label x:Name="FormTitle" Grid.Row="0" Text="*Compila il form"
+                       FontFamily="{StaticResource MontserratBold}" FontSize="16" TextColor="{StaticResource MainColor}"
+                       CharacterSpacing="0.5">
+                </Label>
+
+                <controls:MaterialEntry x:Name="FullNameEntry" Grid.Row="1" Grid.Column="0"
+                                        Style="{StaticResource DefaultEntry}"
+                                        EntryFocused="HandleFullNameEntryFocused"
+                                        Placeholder="*Nome e cognome" Keyboard="Plain" />
+
+                <controls:MaterialEntry x:Name="EmailEntry" Grid.Row="2" Grid.Column="0"
+                                        Style="{StaticResource DefaultEntry}"
+                                        EntryFocused="HandleEmailEntryFocused"
+                                        Placeholder="*Email" Keyboard="Email" />
+
+                <controls:MaterialEntry x:Name="TelephoneEntry" Grid.Row="3" Grid.Column="0" 
+                                        Style="{StaticResource DefaultEntry}"
+                                        EntryFocused="HandleTelephoneEntryFocused"
+                                        Placeholder="*Telefono" Keyboard="Telephone" />
+
+                <controls:MaterialEditor x:Name="MessageEditor" Grid.Row="4" Grid.Column="0" 
+                                         Style="{StaticResource DefaultEditor}"
+                                         HeightRequest="120"
+                                         Placeholder="*Il tuo messaggio" Padding="15, 10, 10, 10"
+                                         MustMantainPlaceholderOnValueSet="False" Keyboard="Default"></controls:MaterialEditor>
+
+                <controls:MaterialButton x:Name="SendButton" Grid.Row="5" ButtonText="*INVIA"
+                                         Style="{StaticResource PrimaryButton}"
+                                         HorizontalOptions="FillAndExpand" Clicked="HandleSendButtonClicked" />
+
+            </Grid>
+
+        </yummy:PancakeView>
+
+    </AbsoluteLayout>
+
+
+    <ux:KeyboardAdaptiveLayout.GestureRecognizers>
+        <TapGestureRecognizer Tapped="HandleOutsideAreaTapped"></TapGestureRecognizer>
+    </ux:KeyboardAdaptiveLayout.GestureRecognizers>
+
+</ux:KeyboardAdaptiveLayout>

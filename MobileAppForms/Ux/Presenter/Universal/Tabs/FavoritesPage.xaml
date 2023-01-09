@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MobileAppForms.Ux.FavoritesPage" BackgroundColor="{StaticResource WhiteFour}">
+    <ContentPage.Content>
+
+        <AbsoluteLayout x:Name="SuperRoot" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+            <AbsoluteLayout x:Name="Root" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1"></AbsoluteLayout>
+
+        </AbsoluteLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

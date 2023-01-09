@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Grid
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:common="clr-namespace:MobileAppForms.Ux.Common"
+    xmlns:controls="clr-namespace:MobileAppForms.Ux.Controls"
+    xmlns:ux="clr-namespace:MobileAppForms.Ux"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    x:Class="MobileAppForms.Ux.Phone.AgencyPageContent"
+    RowSpacing="0" ColumnSpacing="0" Padding="0"
+    BackgroundColor="{StaticResource WhiteFour}">
+
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+    </Grid.RowDefinitions>
+
+    <common:NavigationBar x:Name="NavBar" Grid.Row="0"
+                          Title="*Agenzia" Margin="0"
+                          TitleStyle="{StaticResource NavigationBarTitleLabelStyle}"></common:NavigationBar>
+
+</Grid>

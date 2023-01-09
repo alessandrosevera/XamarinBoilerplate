@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<yummy:PancakeView xmlns="http://xamarin.com/schemas/2014/forms"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                   xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+                   x:Class="MobileAppForms.Ux.Controls.MaterialSegmentedControl"
+                   HorizontalOptions="FillAndExpand" CornerRadius="10" IsClippedToBounds="True">
+    <yummy:PancakeView.Border>
+        <yummy:Border Color="{StaticResource MainColor}" Thickness="2" DrawingStyle="Inside"></yummy:Border>
+    </yummy:PancakeView.Border>
+
+    <Grid HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="1"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <BoxView x:Name="SegmentSeparator" Grid.Column="1" Color="{StaticResource MainColor}"
+                 VerticalOptions="Center"></BoxView>
+
+        <Frame x:Name="LeftSegmentFrame" Grid.Column="0" Grid.ColumnSpan="2" Padding="0, 14" Margin="0" BackgroundColor="#589FF8" CornerRadius="0"
+               HorizontalOptions="FillAndExpand" HasShadow="False">
+            <Label x:Name="LeftSegmentLabel" Text="Vendita"
+                   FontSize="14" TextColor="#FFFFFF" CharacterSpacing="0.5"
+                   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Label>
+
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="HandleLeftSegmentTapped"></TapGestureRecognizer>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame x:Name="RightSegmentFrame" Grid.Column="1" Grid.ColumnSpan="2" Padding="0, 14" Margin="0" BackgroundColor="Transparent" CornerRadius="0"
+               HorizontalOptions="FillAndExpand" HasShadow="False">
+            <Label x:Name="RightSegmentLabel" Text="Affitto"
+                   FontSize="14" TextColor="#484451" CharacterSpacing="0.5"
+                   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Label>
+
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="HandleRightSegmentTapped"></TapGestureRecognizer>
+            </Frame.GestureRecognizers>
+        </Frame>
+    </Grid>
+</yummy:PancakeView>

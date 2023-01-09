@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EDA19CEB-F3B5-40FB-B3FB-C51D49620ABC}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MobileAppForms.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>MobileAppForms.iOS</AssemblyName>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <ProvisioningType>automatic</ProvisioningType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>None</MtouchLink>
+    <MtouchInterpreter>-all</MtouchInterpreter>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ioc\IosContainer.cs" />
+    <Compile Include="Service\BaseUrlIos.cs" />
+    <Compile Include="Service\DeviceIdentifierIos.cs" />
+    <Compile Include="Service\SafeAreaInsetsServiceIos.cs" />
+    <Compile Include="Service\SystemAppLevelSettingsIos.cs" />
+    <Compile Include="Service\CheckFilePermissionIos.cs" />
+    <Compile Include="Service\DbFileHelperIos.cs" />
+    <Compile Include="Renderer\BorderlessEntryRenderer.cs" />
+    <Compile Include="Renderer\MaterialListViewRenderer.cs" />
+    <Compile Include="Renderer\MaterialScrollViewRenderer.cs" />
+    <Compile Include="Renderer\TabbedRootPageRenderer.cs" />
+    <Compile Include="Xform\NativeXformExtension.cs" />
+    <Compile Include="Listener\KeyboardListenerIos.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\icon_heart_fill.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_heart_outline.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_heart_fill.imageset\icon_heart_fill.png" />
+    <ImageAsset Include="Assets.xcassets\icon_heart_fill.imageset\icon_heart_fill%402x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_heart_fill.imageset\icon_heart_fill%403x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_heart_outline.imageset\icon_heart_outline.png" />
+    <ImageAsset Include="Assets.xcassets\icon_heart_outline.imageset\icon_heart_outline%402x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_heart_outline.imageset\icon_heart_outline%403x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_back_black.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_back_black.imageset\icon_back_black.png" />
+    <ImageAsset Include="Assets.xcassets\icon_back_black.imageset\icon_back_black%402x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_back_black.imageset\icon_back_black%403x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_sort.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_sort.imageset\icon_sort.png" />
+    <ImageAsset Include="Assets.xcassets\icon_sort.imageset\icon_sort%402x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_sort.imageset\icon_sort%403x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_share.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_share.imageset\icon_share.png" />
+    <ImageAsset Include="Assets.xcassets\icon_share.imageset\icon_share%402x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_share.imageset\icon_share%403x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_agency.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_profile.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_search.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_favorite.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_home.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_home.imageset\icon_tab_home.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_home.imageset\icon_tab_home%402x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_home.imageset\icon_tab_home%403x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_favorite.imageset\icon_tab_favorite.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_favorite.imageset\icon_tab_favorite%402x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_favorite.imageset\icon_tab_favorite%403x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_search.imageset\icon_tab_search.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_search.imageset\icon_tab_search%402x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_search.imageset\icon_tab_search%403x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_profile.imageset\icon_tab_profile.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_profile.imageset\icon_tab_profile%402x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_profile.imageset\icon_tab_profile%403x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_agency.imageset\icon_tab_agency.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_agency.imageset\icon_tab_agency%402x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_agency.imageset\icon_tab_agency%403x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_collapse_black.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_collapse_black.imageset\icon_collapse_black.png" />
+    <ImageAsset Include="Assets.xcassets\icon_collapse_black.imageset\icon_collapse_black%402x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_collapse_black.imageset\icon_collapse_black%403x.png" />
+    <ImageAsset Include="Assets.xcassets\eyeYes.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\eyeNo.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\eyeNo.imageset\hidden.png" />
+    <ImageAsset Include="Assets.xcassets\eyeNo.imageset\hidden%402x.png" />
+    <ImageAsset Include="Assets.xcassets\eyeNo.imageset\hidden%403x.png" />
+    <ImageAsset Include="Assets.xcassets\eyeYes.imageset\visible.png" />
+    <ImageAsset Include="Assets.xcassets\eyeYes.imageset\visible%402x.png" />
+    <ImageAsset Include="Assets.xcassets\eyeYes.imageset\visible%403x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_profile_disabled.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_profile_disabled.imageset\icon_tab_profile_disabled%403x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_search_disabled.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_home_disabled.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_favorite_disabled.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_agency_disabled.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_agency_disabled.imageset\icon_tab_agency_disabled%403x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_agency_disabled.imageset\icon_tab_agency_disabled%402x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_agency_disabled.imageset\icon_tab_agency_disabled.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_favorite_disabled.imageset\icon_tab_favorite_disabled%403x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_favorite_disabled.imageset\icon_tab_favorite_disabled%402x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_favorite_disabled.imageset\icon_tab_favorite_disabled.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_home_disabled.imageset\icon_tab_home_disabled%403x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_home_disabled.imageset\icon_tab_home_disabled%402x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_home_disabled.imageset\icon_tab_home_disabled.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_search_disabled.imageset\icon_tab_search_disabled%403x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_search_disabled.imageset\icon_tab_search_disabled%402x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_search_disabled.imageset\icon_tab_search_disabled.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_profile_disabled.imageset\icon_tab_profile_disabled%402x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_tab_profile_disabled.imageset\icon_tab_profile_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2545" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.4" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\MobileAppForms\MobileAppForms.csproj">
+      <Project>{3E1879EE-9349-4C87-B984-39EB597DE16C}</Project>
+      <Name>MobileAppForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Libraries\VueSharp\VueSharp\VueSharp.csproj">
+      <Project>{EB1418A8-6C87-4226-90A8-70CFB89FD535}</Project>
+      <Name>VueSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Libraries\VuexSharp\VuexSharp\VuexSharp.csproj">
+      <Project>{01B5F4DF-B498-4AF9-B254-DB2994C7EFE6}</Project>
+      <Name>VuexSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Libraries\SimpleTouchView\SimpleTouchView\SimpleTouchView.csproj">
+      <Project>{A449BC68-4DFC-44CD-A7F9-865E5A3A9118}</Project>
+      <Name>SimpleTouchView</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Ioc\" />
+    <Folder Include="Service\" />
+    <Folder Include="Renderer\" />
+    <Folder Include="Xform\" />
+    <Folder Include="Listener\" />
+    <Folder Include="Resources\Fonts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Fonts\icomoon.ttf" />
+    <BundleResource Include="Resources\Fonts\Montserrat-Black.ttf" />
+    <BundleResource Include="Resources\Fonts\Montserrat-Bold.ttf" />
+    <BundleResource Include="Resources\Fonts\Montserrat-ExtraBold.ttf" />
+    <BundleResource Include="Resources\Fonts\Montserrat-ExtraLight.ttf" />
+    <BundleResource Include="Resources\Fonts\Montserrat-Light.ttf" />
+    <BundleResource Include="Resources\Fonts\Montserrat-Medium.ttf" />
+    <BundleResource Include="Resources\Fonts\Montserrat-Regular.ttf" />
+    <BundleResource Include="Resources\Fonts\Montserrat-SemiBold.ttf" />
+    <BundleResource Include="Resources\Fonts\Montserrat-Thin.ttf" />
+  </ItemGroup>
+</Project>

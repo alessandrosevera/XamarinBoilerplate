@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms"
+      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+      x:Class="MobileAppForms.Ux.Common.NavigationBar"
+      ColumnSpacing="0" RowSpacing="0" HorizontalOptions="FillAndExpand" Margin="0, 0, 0, 10">
+
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="44"></ColumnDefinition>
+        <ColumnDefinition Width="44"></ColumnDefinition>
+        <ColumnDefinition Width="*"></ColumnDefinition>
+        <ColumnDefinition Width="44"></ColumnDefinition>
+        <ColumnDefinition Width="44"></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="50"></RowDefinition>
+    </Grid.RowDefinitions>
+
+
+    <Frame x:Name="LeftActionFrame" Grid.Row="0" Grid.Column="0" BackgroundColor="Transparent" HasShadow="False"
+           Padding="0" Margin="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" IsVisible="False">
+        <Image x:Name="LeftIconImage" HeightRequest="18" Aspect="AspectFit"
+               HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Image>
+
+        <Frame.GestureRecognizers>
+            <TapGestureRecognizer Tapped="HandleLeftActionIconTapped"></TapGestureRecognizer>
+        </Frame.GestureRecognizers>
+    </Frame>
+
+    <Label x:Name="TitleLabel" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Padding="0"
+           HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"
+           VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"></Label>
+
+    <Frame x:Name="RightSecondaryActionFrame" Grid.Row="0" Grid.Column="3" BackgroundColor="Transparent" HasShadow="False"
+           Padding="0" Margin="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" IsVisible="False">
+        <Image x:Name="RightSecondaryIconImage" HeightRequest="18" Aspect="AspectFit"
+               HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Image>
+
+        <Frame.GestureRecognizers>
+            <TapGestureRecognizer Tapped="HandleRightSecondaryActionIconTapped"></TapGestureRecognizer>
+        </Frame.GestureRecognizers>
+    </Frame>
+
+    <Frame x:Name="RightActionFrame" Grid.Row="0" Grid.Column="4" BackgroundColor="Transparent" HasShadow="False"
+           Padding="0" Margin="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" IsVisible="False">
+        <Image x:Name="RightIconImage" HeightRequest="18" Aspect="AspectFit"
+               HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Image>
+
+        <Frame.GestureRecognizers>
+            <TapGestureRecognizer Tapped="HandleRightActionIconTapped"></TapGestureRecognizer>
+        </Frame.GestureRecognizers>
+    </Frame>
+
+</Grid>

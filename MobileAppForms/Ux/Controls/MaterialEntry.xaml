@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:MobileAppForms.Ux.Controls"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             x:Class="MobileAppForms.Ux.Controls.MaterialEntry">
+
+    <yummy:PancakeView x:Name="EntryWrapper">
+
+        <Grid x:Name="WrapperGrid"
+              RowSpacing="0" ColumnSpacing="0" Padding="0" Margin="0" IsClippedToBounds="False">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="46" />
+            </Grid.ColumnDefinitions>
+
+                <AbsoluteLayout x:Name="EntryElementsContainer" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                                Margin="0">
+                    <AbsoluteLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="HandleInactiveAreaTapped"></TapGestureRecognizer>
+                    </AbsoluteLayout.GestureRecognizers>
+                    
+                    <controls:BorderlessEntry x:Name="EntryField"
+                                        Text="{Binding Text, Mode=TwoWay}"
+                                        VerticalOptions="End" TextChanged="HandleEntryFieldTextChanged"
+                                        Focused="HandleEntryFieldFocused" Unfocused="HandleEntryFieldFocused"
+                                        AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional" AbsoluteLayout.LayoutBounds="0, 0.5, 1, -1"
+                                        ios:Entry.CursorColor="DodgerBlue"
+                                        PlaceholderColor="#80696C6F" Keyboard="Default" TextColor="#FF1D204C" FontSize="12" />
+
+                    <Label x:Name="EntryPlaceholder" IsVisible="False"
+                           InputTransparent="True"
+                           HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start"
+                           AnchorX="0"
+                           VerticalOptions="End"
+                           AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional" AbsoluteLayout.LayoutBounds="0, 0.5, 1, -1"
+                           TextColor="#80696C6F" FontSize="12"/>
+
+                    <Label x:Name="Forgotten" Margin="0,0,2,0" HorizontalOptions="End" HorizontalTextAlignment="End"
+                           VerticalOptions="Center"
+                           AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="1, 0.5, -1, -1"
+                           TextColor="#80696C6F" FontSize="12">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="HandleForgottenTapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+
+                </AbsoluteLayout>
+
+                <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="Transparent" VerticalOptions="FillAndExpand"
+                       HasShadow="False" Margin="0" Padding="15, 0" CornerRadius="0" HorizontalOptions="EndAndExpand">
+                    <Image x:Name="Eye" WidthRequest="16" HeightRequest="16" Aspect="AspectFit"
+                           VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Image>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="HandleEyeTapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+                
+
+                <BoxView x:Name="AccentLine" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+                         HorizontalOptions="FillAndExpand" HeightRequest="2"
+                         Color="#FF8C8C8C"/>
+                <BoxView x:Name="Line" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+                         HorizontalOptions="FillAndExpand" HeightRequest="2"
+                         Color="DodgerBlue"/>
+                <BoxView x:Name="ErrorLine" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+                         HorizontalOptions="FillAndExpand" HeightRequest="2"
+                         Color="Red"/>
+
+        </Grid>
+    </yummy:PancakeView>
+</ContentView>

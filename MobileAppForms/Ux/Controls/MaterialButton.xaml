@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="MobileAppForms.Ux.Controls.MaterialButton">
+
+
+
+    <ContentView.Content>
+
+            <yummy:PancakeView x:Name="ThisButton" BackgroundColor="#589FF8"
+                               CornerRadius="28"
+                               Padding="34, 19" Margin="0"
+                               HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+                <!--<yummy:PancakeView.Shadow>
+                    <yummy:DropShadow BlurRadius="16" Offset="0, 8" Color="#1A000000"></yummy:DropShadow>
+                </yummy:PancakeView.Shadow>-->
+
+                <AbsoluteLayout>
+                    <StackLayout x:Name="MyContent" Orientation="Horizontal" Spacing="6"
+                                 AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1">
+                        <Image x:Name="MyIcon" IsVisible="False" HeightRequest="18" Aspect="AspectFit"></Image>
+                        <Label x:Name="MyText" FontSize="14" TextColor="White" VerticalOptions="CenterAndExpand"></Label>
+                    </StackLayout>
+                    
+                    <ActivityIndicator x:Name="MyLoading" IsRunning="True" Color="White" IsVisible="False" BackgroundColor="Transparent"
+                                       WidthRequest="18" HeightRequest="18"
+                                       AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1"></ActivityIndicator>
+                </AbsoluteLayout>
+
+                <yummy:PancakeView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="HandleButtonTapped"></TapGestureRecognizer>
+                </yummy:PancakeView.GestureRecognizers>
+            </yummy:PancakeView>
+
+    </ContentView.Content>
+</ContentView>

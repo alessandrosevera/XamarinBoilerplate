@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<yummy:PancakeView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    x:Class="MobileAppForms.Ux.Controls.MaterialEditor">
+    <Grid x:Name="EditorGrid"
+          RowSpacing="0" ColumnSpacing="0" Padding="0" Margin="0" IsClippedToBounds="False"
+          VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="2" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Editor x:Name="EditorField" BackgroundColor="Transparent"
+                Text="{Binding Text, Mode=TwoWay}"
+                AutoSize="Disabled"
+                VerticalOptions="FillAndExpand" TextChanged="HandleEditorFieldTextChanged" 
+                Focused="HandleEditorFieldFocused" Unfocused="HandleEditorFieldFocused"
+                Grid.Row="0" Grid.Column="0"
+                ios:Entry.CursorColor="DodgerBlue"
+                PlaceholderColor="#80696C6F" Keyboard="Default" TextColor="#FF1D204C" FontSize="12" />
+
+        <Label x:Name="EditorPlaceholder" IsVisible="True" Text="Prova"
+               InputTransparent="True"
+               HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start"
+               AnchorX="0" Padding="4, 8, 0, 0"
+               VerticalOptions="StartAndExpand"
+               Grid.Row="0" Grid.Column="0"
+               TextColor="#80FFFFFF" FontSize="12"/>
+
+        <BoxView x:Name="AccentLine" Grid.Row="1" Grid.Column="0" 
+                 HorizontalOptions="FillAndExpand" HeightRequest="2"
+                 Color="#FF8C8C8C"/>
+        <BoxView x:Name="Line" Grid.Row="1" Grid.Column="0" 
+                 HorizontalOptions="FillAndExpand" HeightRequest="2"
+                 Color="DodgerBlue"/>
+        <BoxView x:Name="ErrorLine" Grid.Row="1" Grid.Column="0" 
+                 HorizontalOptions="FillAndExpand" HeightRequest="2"
+                 Color="Red"/>
+
+    </Grid>
+</yummy:PancakeView>

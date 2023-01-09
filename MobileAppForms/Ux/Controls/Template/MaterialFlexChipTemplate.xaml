@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<yummy:PancakeView xmlns="http://xamarin.com/schemas/2014/forms"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                   xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+                   x:Class="MobileAppForms.Ux.Controls.Template.MaterialFlexChipTemplate"
+                   Padding="8" HorizontalOptions="Start" CornerRadius="10" Margin="{Binding NormalizedSpacing}"
+                   WidthRequest="{Binding Width}" BackgroundColor="{Binding BackgroundColor}">
+    <yummy:PancakeView.Border>
+        <yummy:Border Color="{Binding BorderColor}" DrawingStyle="Inside" Thickness="{Binding BorderThickness}"></yummy:Border>
+    </yummy:PancakeView.Border>
+
+    <Label Text="{Binding Label}"
+           FontFamily="{Binding FontFamily}" FontSize="{Binding FontSize}" TextColor="{Binding TextColor}"
+           HorizontalOptions="CenterAndExpand"></Label>
+</yummy:PancakeView>

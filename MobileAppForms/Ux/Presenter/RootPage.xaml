@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:ux="clr-namespace:MobileAppForms.Ux"
+            xmlns:effects="clr-namespace:MobileAppForms.Effects"
+            xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" 
+            android:TabbedPage.ToolbarPlacement="Bottom" 
+            android:TabbedPage.IsSwipePagingEnabled="False"
+            android:TabbedPage.IsSmoothScrollEnabled="false"
+            SelectedTabColor="{StaticResource MainColor}"
+            UnselectedTabColor="{StaticResource DustyGray}"
+            x:Class="MobileAppForms.Ux.RootPage">
+
+    <ux:SearchPage x:Name="SearchTab" IconImageSource="icon_tab_home" Title="Cerca"></ux:SearchPage>
+    <ux:FavoritesPage x:Name="FavoritesTab" IconImageSource="icon_tab_favorite" Title="Preferiti"></ux:FavoritesPage>
+    <ux:AgencyPage x:Name="AgencyTab" IconImageSource="icon_tab_agency" Title="Agenzia"></ux:AgencyPage>
+    <ux:ProfilePage x:Name="ProfileTab" IconImageSource="icon_tab_profile" Title="Profilo"></ux:ProfilePage>
+
+    <TabbedPage.Effects>
+        <effects:NoShiftEffect />
+    </TabbedPage.Effects>
+
+</TabbedPage>

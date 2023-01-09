@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:MobileAppForms.Ux.Controls"
+             x:Class="MobileAppForms.App">
+    <Application.Resources>
+
+        <Color x:Key="MainColor">#114CA1</Color>
+        <Color x:Key="MainColor15">#26114ca1</Color>
+        <Color x:Key="MainColorReverse">#FFFFFF</Color>
+
+        <Color x:Key="Black">#000000</Color>
+        <Color x:Key="Black10">#1A000000</Color>
+        <Color x:Key="Black70">#B3000000</Color>
+        <Color x:Key="White">#FFFFFF</Color>
+        <Color x:Key="White50">#80FFFFFF</Color>
+        
+
+        <Color x:Key="WhiteTwo">#F2F2F2</Color>
+        <Color x:Key="WhiteThree">#EFF0F8</Color>
+        <Color x:Key="WhiteFour">#F8F8F8</Color>
+        <Color x:Key="WhiteFive">#E0E0E0</Color>
+        
+        
+
+        <Color x:Key="SlateGray">#444B51</Color>
+        <Color x:Key="Silver">#838396</Color>
+        <Color x:Key="SilverSlate">#ADA8B8</Color>
+        <Color x:Key="DeepAmethyst">#948EA2</Color>
+        
+
+        <Color x:Key="DarkGray">#484451</Color> 
+        <Color x:Key="DustyGray">#979797</Color>
+        <Color x:Key="DustyGray40">#66979797</Color>
+        <Color x:Key="DustyGrayTwo">#989898</Color>
+        <Color x:Key="LightGray">#D8D8D8</Color>
+        <Color x:Key="LightGrayTwo">#E1E0E3</Color>
+        <Color x:Key="LightGrayThree">#EAEAEA</Color>
+        <Color x:Key="SilverGray">#6B7F99</Color>
+        <Color x:Key="SilverGray30">#4D6B7F99</Color>
+        <Color x:Key="Tuna">#323643</Color>
+        <Color x:Key="Tuna10">#1A323643</Color>
+        <Color x:Key="Strawberry">#F63C3E</Color>
+        <Color x:Key="FadedRed">#C0272D</Color>
+        <Color x:Key="Green">#7AC843</Color>
+
+        <Color x:Key="FacebookColor">#3B5998</Color>
+        <Color x:Key="GoogleColor">#DB4437</Color>
+        <Color x:Key="AppleColor">#000000</Color>
+
+        <Color x:Key="WhatsAppBlueColor">#34B7F1</Color>
+        <Color x:Key="WhatsAppLightGreenColor">#25D366</Color>
+        <Color x:Key="WhatsAppTealGreenColor">#128C7E</Color>
+        <Color x:Key="WhatsAppTealGreenDarkColor">#075E54</Color>
+
+        
+
+        <OnPlatform x:TypeArguments="x:String" x:Key="MontserratBlack">
+            <On Platform="iOS" Value="Montserrat-Black" />
+            <On Platform="Android" Value="Montserrat-Black.ttf#Montserrat-black" />
+        </OnPlatform>
+        <OnPlatform x:TypeArguments="x:String" x:Key="MontserratBold">
+            <On Platform="iOS" Value="Montserrat-Bold" />
+            <On Platform="Android" Value="Montserrat-Bold.ttf#Montserrat-bold" />
+        </OnPlatform>
+        <OnPlatform x:TypeArguments="x:String" x:Key="MontserratExtraBold">
+            <On Platform="iOS" Value="Montserrat-ExtraBold" />
+            <On Platform="Android" Value="Montserrat-ExtraBold.ttf#Montserrat-extrabold" />
+        </OnPlatform>
+        <OnPlatform x:TypeArguments="x:String" x:Key="MontserratExtraLight">
+            <On Platform="iOS" Value="Montserrat-ExtraLight" />
+            <On Platform="Android" Value="Montserrat-ExtraLight.ttf#Montserrat-extralight" />
+        </OnPlatform>
+        <OnPlatform x:TypeArguments="x:String" x:Key="MontserratLight">
+            <On Platform="iOS" Value="Montserrat-Light" />
+            <On Platform="Android" Value="Montserrat-Light.ttf#Montserrat-light" />
+        </OnPlatform>
+        <OnPlatform x:TypeArguments="x:String" x:Key="MontserratMedium">
+            <On Platform="iOS" Value="Montserrat-Medium" />
+            <On Platform="Android" Value="Montserrat-Medium.ttf#Montserrat-medium" />
+        </OnPlatform>
+        <OnPlatform x:TypeArguments="x:String" x:Key="MontserratRegular">
+            <On Platform="iOS" Value="Montserrat-Regular" />
+            <On Platform="Android" Value="Montserrat-Regular.ttf#Montserrat-regular" />
+        </OnPlatform>
+        <OnPlatform x:TypeArguments="x:String" x:Key="MontserratSemiBold">
+            <On Platform="iOS" Value="Montserrat-SemiBold" />
+            <On Platform="Android" Value="Montserrat-SemiBold.ttf#Montserrat-semibold" />
+        </OnPlatform>
+        <OnPlatform x:TypeArguments="x:String" x:Key="MontserratThin">
+            <On Platform="iOS" Value="Montserrat-Thin" />
+            <On Platform="Android" Value="Montserrat-Thin.ttf#Montserrat-thin" />
+        </OnPlatform>
+        <OnPlatform x:TypeArguments="x:String" x:Key="CustomIcon">
+            <On Platform="iOS" Value="icomoon" />
+            <On Platform="Android" Value="icomoon.ttf#icomoon" />
+        </OnPlatform>
+
+
+
+        <Style x:Key="DefaultEntry" TargetType="controls:MaterialEntry">
+            <Setter Property="ErrorColor" Value="{StaticResource Strawberry}"></Setter>
+            <Setter Property="CornerRadius" Value="8"></Setter>
+            <Setter Property="InnerPadding" Value="0, 12"></Setter>
+            <Setter Property="TextIndent" Value="15"></Setter>
+            <Setter Property="BackgroundColor" Value="{StaticResource WhiteThree}"></Setter>
+            <Setter Property="PlaceholderFontFamily" Value="{StaticResource MontserratRegular}"></Setter>
+            <Setter Property="PlaceholderColor" Value="{StaticResource SilverSlate}"></Setter>
+            <Setter Property="FontFamily" Value="{StaticResource MontserratSemiBold}"></Setter>
+            <Setter Property="TextColor" Value="{StaticResource MainColor}"></Setter>
+            <Setter Property="FontSize" Value="14"></Setter>
+            <Setter Property="UseWrappingBorder" Value="True"></Setter>
+            <Setter Property="BorderColor" Value="{StaticResource WhiteThree}"></Setter>
+            <Setter Property="BorderThickness" Value="2"></Setter>
+            <Setter Property="BorderDrawingStyle" Value="Inside"></Setter>
+            <Setter Property="LineColor" Value="{StaticResource WhiteThree}"></Setter>
+            <Setter Property="AccentColor" Value="{StaticResource MainColor}"></Setter>
+            <Setter Property="MustMantainAccentOnValueSet" Value="False"></Setter>
+            <Setter Property="MustMantainPlaceholderOnValueSet" Value="True"></Setter>
+            <Setter Property="InputTranslationYOnValueSet" Value="9"></Setter>
+        </Style>
+
+        <Style x:Key="DefaultEditor" TargetType="controls:MaterialEditor">
+            <Setter Property="ErrorColor" Value="{StaticResource Strawberry}"></Setter>
+            <Setter Property="CornerRadius" Value="8"></Setter>
+            <Setter Property="Padding" Value="15, 12, 10, 12"></Setter>
+            <Setter Property="BackgroundColor" Value="{StaticResource WhiteThree}"></Setter>
+            <Setter Property="PlaceholderFontFamily" Value="{StaticResource MontserratRegular}"></Setter>
+            <Setter Property="PlaceholderColor" Value="{StaticResource SilverSlate}"></Setter>
+            <Setter Property="FontFamily" Value="{StaticResource MontserratSemiBold}"></Setter>
+            <Setter Property="TextColor" Value="{StaticResource MainColor}"></Setter>
+            <Setter Property="FontSize" Value="14"></Setter>
+            <Setter Property="UseWrappingBorder" Value="True"></Setter>
+            <Setter Property="BorderColor" Value="{StaticResource WhiteThree}"></Setter>
+            <Setter Property="BorderThickness" Value="2"></Setter>
+            <Setter Property="BorderDrawingStyle" Value="Inside"></Setter>
+            <Setter Property="LineColor" Value="{StaticResource WhiteThree}"></Setter>
+            <Setter Property="AccentColor" Value="{StaticResource MainColor}"></Setter>
+            <Setter Property="MustMantainAccentOnValueSet" Value="False"></Setter>
+            <Setter Property="MustMantainPlaceholderOnValueSet" Value="True"></Setter>
+            <Setter Property="InputTranslationYOnValueSet" Value="9"></Setter>
+        </Style>
+
+        <Style x:Key="PrimaryButton" TargetType="controls:MaterialButton">
+            <Setter Property="ButtonPadding" Value="25, 15"></Setter>
+            <Setter Property="ButtonRadius" Value="8"></Setter>
+            <Setter Property="ButtonFontFamily" Value="{StaticResource MontserratBold}"></Setter>
+            <Setter Property="ButtonBackgroundColor" Value="{StaticResource MainColor}"></Setter>
+            <Setter Property="ButtonTextColor" Value="{StaticResource MainColorReverse}"></Setter>
+            <Setter Property="ButtonFontSize" Value="12"></Setter>
+            <Setter Property="HasShadow" Value="False"></Setter>
+            <Setter Property="MustReduceToLoading" Value="False"></Setter>
+            <Setter Property="LoadingColor" Value="{StaticResource MainColorReverse}"></Setter>
+            <Setter Property="ButtonTextTransform" Value="Default"></Setter>
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property="Opacity" Value="1" />
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState x:Name="Disabled">
+                            <VisualState.Setters>
+                                <Setter Property="Opacity" Value="0.5" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+
+        <Style x:Key="SecondaryButton" TargetType="controls:MaterialButton">
+            <Setter Property="ButtonPadding" Value="25, 15"></Setter>
+            <Setter Property="ButtonRadius" Value="8"></Setter>
+            <Setter Property="ButtonFontFamily" Value="{StaticResource MontserratBold}"></Setter>
+            <Setter Property="ButtonBackgroundColor" Value="Transparent"></Setter>
+            <Setter Property="ButtonTextColor" Value="{StaticResource MainColor}"></Setter>
+            <Setter Property="ButtonFontSize" Value="12"></Setter>
+            <Setter Property="BorderColor" Value="{StaticResource MainColor}"></Setter>
+            <Setter Property="BorderThickness" Value="2"></Setter>
+            <Setter Property="BorderDrawingStyle" Value="Inside"></Setter>
+            <Setter Property="HasShadow" Value="False"></Setter>
+            <Setter Property="MustReduceToLoading" Value="False"></Setter>
+            <Setter Property="LoadingColor" Value="{StaticResource MainColor}"></Setter>
+            <Setter Property="ButtonTextTransform" Value="Default"></Setter>
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property="Opacity" Value="1" />
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState x:Name="Disabled">
+                            <VisualState.Setters>
+                                <Setter Property="Opacity" Value="0.5" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+
+        <Style x:Key="LogoutButton" TargetType="controls:MaterialButton">
+            <Setter Property="ButtonPadding" Value="25, 15"></Setter>
+            <Setter Property="ButtonRadius" Value="8"></Setter>
+            <Setter Property="ButtonFontFamily" Value="{StaticResource MontserratBold}"></Setter>
+            <Setter Property="ButtonBackgroundColor" Value="{StaticResource Strawberry}"></Setter>
+            <Setter Property="ButtonTextColor" Value="{StaticResource White}"></Setter>
+            <Setter Property="ButtonFontSize" Value="12"></Setter>
+            <Setter Property="HasShadow" Value="False"></Setter>
+            <Setter Property="MustReduceToLoading" Value="False"></Setter>
+            <Setter Property="LoadingColor" Value="{StaticResource White}"></Setter>
+            <Setter Property="ButtonTextTransform" Value="Default"></Setter>
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property="Opacity" Value="1" />
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState x:Name="Disabled">
+                            <VisualState.Setters>
+                                <Setter Property="Opacity" Value="0.5" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+
+        <Style x:Key="RangeSliderCurrentValueStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="10"></Setter>
+            <Setter Property="TextColor" Value="{StaticResource DarkGray}"></Setter>
+            <Setter Property="FontFamily" Value="{StaticResource MontserratSemiBold}"></Setter>
+        </Style>
+
+        <Style x:Key="NavigationBarTitleLabelStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="16"></Setter>
+            <Setter Property="TextColor" Value="{StaticResource SlateGray}"></Setter>
+            <Setter Property="FontFamily" Value="{StaticResource MontserratBold}"></Setter>
+            <Setter Property="CharacterSpacing" Value="0.36"></Setter>
+        </Style>
+
+
+
+
+
+
+
+        <Style x:Key="DefaultFlexChips" TargetType="controls:MaterialFlexChips">
+            <Setter Property="BorderColor" Value="{StaticResource DustyGray}"></Setter>
+            <Setter Property="SelectedBorderColor" Value="{StaticResource MainColor}"></Setter>
+            <Setter Property="TextColor" Value="{StaticResource SlateGray}"></Setter>
+            <Setter Property="SelectedTextColor" Value="{StaticResource MainColor}"></Setter>
+            <Setter Property="BackgroundColor" Value="{StaticResource White}"></Setter>
+            <Setter Property="SelectedBackgroundColor" Value="{StaticResource MainColor15}"></Setter>
+            <Setter Property="FontFamily" Value="{StaticResource MontserratSemiBold}"></Setter>
+            <Setter Property="SelectedFontFamily" Value="{StaticResource MontserratBold}"></Setter>
+            <Setter Property="BorderThickness" Value="1"></Setter>
+            <Setter Property="SelectedBorderThickness" Value="2"></Setter>
+            <Setter Property="FontSize" Value="13"></Setter>
+            <Setter Property="Spacing" Value="0, 0, 10, 7"></Setter>
+        </Style>
+
+        <Style x:Key="NotificationTypeFlexChips" TargetType="controls:MaterialFlexChips">
+            <Setter Property="BorderColor" Value="{StaticResource DustyGray}"></Setter>
+            <Setter Property="SelectedBorderColor" Value="{StaticResource MainColor}"></Setter>
+            <Setter Property="TextColor" Value="{StaticResource DustyGray}"></Setter>
+            <Setter Property="SelectedTextColor" Value="{StaticResource MainColorReverse}"></Setter>
+            <Setter Property="BackgroundColor" Value="{StaticResource White}"></Setter>
+            <Setter Property="SelectedBackgroundColor" Value="{StaticResource MainColor}"></Setter>
+            <Setter Property="FontFamily" Value="{StaticResource CustomIcon}"></Setter>
+            <Setter Property="SelectedFontFamily" Value="{StaticResource CustomIcon}"></Setter>
+            <Setter Property="BorderThickness" Value="1"></Setter>
+            <Setter Property="SelectedBorderThickness" Value="2"></Setter>
+            <Setter Property="FontSize" Value="13"></Setter>
+            <Setter Property="Spacing" Value="0, 0, 5, 0"></Setter>
+        </Style>
+
+    </Application.Resources>
+</Application>

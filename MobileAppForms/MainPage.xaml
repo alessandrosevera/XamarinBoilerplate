@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MobileAppForms"
+             xmlns:stv="clr-namespace:SimpleTouchView;assembly=SimpleTouchView"
+             x:Class="MobileAppForms.MainPage" BackgroundColor="Gray">
+
+    <stv:TouchView BackgroundColor="Green" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                   Up="HandleUp" Down="HandleDown" Panning="HandlePanning" Panned="HandlePanned">
+
+        <AbsoluteLayout x:Name="Panel" BackgroundColor="Lime" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+                        AbsoluteLayout.LayoutBounds="0, 1, 1, 500"
+                        TranslationY="250">
+
+            <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" Padding="0, 44, 0, 0"
+                        IsEnabled="False">
+                <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="FillAndExpand">
+                    <BoxView BackgroundColor="Blue" HeightRequest="50" HorizontalOptions="FillAndExpand"></BoxView>
+                    <BoxView BackgroundColor="Orange" HeightRequest="50" HorizontalOptions="FillAndExpand"></BoxView>
+                    <BoxView BackgroundColor="Blue" HeightRequest="50" HorizontalOptions="FillAndExpand"></BoxView>
+                    <BoxView BackgroundColor="Orange" HeightRequest="50" HorizontalOptions="FillAndExpand"></BoxView>
+                    <BoxView BackgroundColor="Blue" HeightRequest="50" HorizontalOptions="FillAndExpand"></BoxView>
+                    <BoxView BackgroundColor="Orange" HeightRequest="50" HorizontalOptions="FillAndExpand"></BoxView>
+                    <BoxView BackgroundColor="Blue" HeightRequest="50" HorizontalOptions="FillAndExpand"></BoxView>
+                    <BoxView BackgroundColor="Orange" HeightRequest="50" HorizontalOptions="FillAndExpand"></BoxView>
+                    <BoxView BackgroundColor="Blue" HeightRequest="50" HorizontalOptions="FillAndExpand"></BoxView>
+                    <BoxView BackgroundColor="Orange" HeightRequest="50" HorizontalOptions="FillAndExpand"></BoxView>
+                    <BoxView BackgroundColor="Blue" HeightRequest="50" HorizontalOptions="FillAndExpand"></BoxView>
+                    <BoxView BackgroundColor="Orange" HeightRequest="50" HorizontalOptions="FillAndExpand"></BoxView>
+                    <BoxView BackgroundColor="Blue" HeightRequest="50" HorizontalOptions="FillAndExpand"></BoxView>
+                    <BoxView BackgroundColor="Orange" HeightRequest="50" HorizontalOptions="FillAndExpand"></BoxView>
+                    <BoxView BackgroundColor="Blue" HeightRequest="50" HorizontalOptions="FillAndExpand"></BoxView>
+                    <BoxView BackgroundColor="Orange" HeightRequest="50" HorizontalOptions="FillAndExpand"></BoxView>
+                    <BoxView BackgroundColor="Blue" HeightRequest="50" HorizontalOptions="FillAndExpand"></BoxView>
+                    <BoxView BackgroundColor="Orange" HeightRequest="50" HorizontalOptions="FillAndExpand"></BoxView>
+                    <BoxView BackgroundColor="Blue" HeightRequest="50" HorizontalOptions="FillAndExpand"></BoxView>
+                    <BoxView BackgroundColor="Orange" HeightRequest="50" HorizontalOptions="FillAndExpand"></BoxView>
+                </StackLayout>
+            </ScrollView>
+
+            <Entry AbsoluteLayout.LayoutFlags="XProportional, WidthProportional" AbsoluteLayout.LayoutBounds="0, 45, 1, 44"
+                   BackgroundColor="White"></Entry>
+
+            <Switch AbsoluteLayout.LayoutFlags="XProportional, WidthProportional" AbsoluteLayout.LayoutBounds="0, 90, 1, 44"
+                   BackgroundColor="White"></Switch>
+
+            <BoxView x:Name="PanelDraggableArea" HeightRequest="44" BackgroundColor="Black"
+                     AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+                     AbsoluteLayout.LayoutBounds="0, 0, 1, 44"></BoxView>
+
+        </AbsoluteLayout>
+
+    </stv:TouchView>
+
+</ContentPage>

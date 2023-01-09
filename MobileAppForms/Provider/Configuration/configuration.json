@@ -1,0 +1,28 @@
+﻿{
+  "apiRoot": "",
+  "twoLetterIsoFallbackLanguageName": "en",
+  "assistanceEmail": "assistance@yopmail.com",
+  "supportedLanguages": {
+    "it": {
+      "LocalizedDenominations": {
+        "it": "Italiano",
+        "en": "Italian",
+        "fr": "Italien"
+      }
+    },
+    "en": {
+      "LocalizedDenominations": {
+        "it": "Inglese",
+        "en": "English",
+        "fr": "Anglais"
+      }
+    },
+    "fr": {
+      "LocalizedDenominations": {
+        "it": "Francese",
+        "en": "French",
+        "fr": "Français"
+      }
+    }
+  }
+}
