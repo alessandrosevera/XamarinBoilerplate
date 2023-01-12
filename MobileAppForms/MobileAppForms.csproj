@@ -25,6 +25,9 @@
     <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
     <PackageReference Include="HtmlAgilityPack" Version="1.11.46" />
     <PackageReference Include="System.Collections.Immutable" Version="7.0.0" />
+    <PackageReference Include="Autofac" Version="6.5.0" />
+    <PackageReference Include="NGettext" Version="0.6.7" />
+    <PackageReference Include="SimpleTouchView" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="VuexCross" />
@@ -81,11 +84,11 @@
     <None Remove="Ux\Common\" />
     <None Remove="Effects\" />
     <None Remove="Ux\Presenter\Phone\Tabs\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Libraries\VuexSharp\VuexSharp\VuexSharp.csproj" />
-    <ProjectReference Include="..\..\..\Libraries\VueSharp\VueSharp\VueSharp.csproj" />
-    <ProjectReference Include="..\..\..\Libraries\SimpleTouchView\SimpleTouchView\SimpleTouchView.csproj" />
+    <None Remove="VuexSharp" />
+    <None Remove="VueSharp" />
+    <None Remove="SimpleTouchView" />
+    <None Remove="Autofac" />
+    <None Remove="NGettext" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Ioc\" />
@@ -142,5 +145,13 @@
     <Compile Update="Ux\PreWorkflowPage.xaml.cs">
       <DependentUpon>PreWorkflowPage.xaml</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="VuexSharp">
+      <HintPath>..\libraries\VuexSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="VueSharp">
+      <HintPath>..\libraries\VueSharp.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

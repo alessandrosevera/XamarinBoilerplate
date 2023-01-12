@@ -206,28 +206,25 @@
     <Reference Include="Xamarin.iOS" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="VueSharp">
+      <HintPath>..\libraries\VueSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="VuexSharp">
+      <HintPath>..\libraries\VuexSharp.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2545" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.4" />
+    <PackageReference Include="SimpleTouchView">
+      <Version>1.0.0</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\MobileAppForms\MobileAppForms.csproj">
       <Project>{3E1879EE-9349-4C87-B984-39EB597DE16C}</Project>
       <Name>MobileAppForms</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Libraries\VueSharp\VueSharp\VueSharp.csproj">
-      <Project>{EB1418A8-6C87-4226-90A8-70CFB89FD535}</Project>
-      <Name>VueSharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Libraries\VuexSharp\VuexSharp\VuexSharp.csproj">
-      <Project>{01B5F4DF-B498-4AF9-B254-DB2994C7EFE6}</Project>
-      <Name>VuexSharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Libraries\SimpleTouchView\SimpleTouchView\SimpleTouchView.csproj">
-      <Project>{A449BC68-4DFC-44CD-A7F9-865E5A3A9118}</Project>
-      <Name>SimpleTouchView</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

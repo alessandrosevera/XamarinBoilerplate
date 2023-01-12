@@ -5,7 +5,6 @@ using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
 using MobileAppForms.Ioc;
-using SimpleTouchView.Droid;
 using SimpleTouchView;
 using Newtonsoft.Json;
 using System.Linq;
@@ -47,8 +46,8 @@ namespace MobileAppForms.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
             ActivityUtility.ActuateSystemBarsAspect(Window, Android.Views.WindowManagerFlags.KeepScreenOn);
-
-            var xx1 = new TouchViewRenderer(this);
+            
+            var xx1 = new SimpleTouchView.Droid.TouchViewRenderer(this);
             var xx2 = new TabbedRootPageRenderer(this);
 
             MaterialScrollViewRenderer.Initialize();
